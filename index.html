@@ -1,70 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="id">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>kopi kenangan - website UMKM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Kenangan - Website UMKM</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class = "page">
-        <section class="hero">
-            <p class="eyebrow">UMKM BATANG</p>
-            <h1> kopi kenangan</h1>
-            <p>pilihan kopi untuk menemani anda galau.</p>
-            <button id ="promoButton"type="button">lihat promo hari ini</button>
-            </section>
+    <header class="main-nav">
+        <div class="container nav-inner">
+            <span class="brand">
+    <img src="asset/gambar/logo_kopi_kenangan.webp" alt class="brand-logo">
+    Kopi Kenangan
+</span>
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section class="products-section">
-        <h2>Produk Unggulan</h2>
-        <ul class="products">
-            <li class="product-card">
-                <img src="kopi_coldbrewaren.avif" alt="Kopi Tubruk Signature">
-                <h3>1. Kopi Tubruk Signature</h3>
-                <strong>Rp18.000</strong>
-                <p>Kopi hitam pekat dengan aroma khas untuk menemani pagi atau malam saat sedang banyak pikiran.</p>
-            </li>
-            <li class="product-card">
-                <img src="kopi_signature.webp" alt="Cold Brew Aren">
-                <h3>2. Cold Brew Aren</h3>
-                <strong>Rp24.000</strong>
-                <p>Kopi cold brew yang ringan dan segar dengan perpaduan manis gula aren, cocok diminum siang hari.</p>
-            </li>
-            <li class="product-card">
-                <img src="COFFEE_BASED_-_LEMONIA_AMERICANO_r3pkyn.jpg" alt="Americano Peach">
-                <h3>3. Americano Peach</h3>
-                <strong>Rp19.000</strong>
-                <p>Perpaduan espresso dan rasa peach yang segar, cocok untuk Anda yang ingin kopi dengan sensasi buah.</p>
-            </li>
-            <li class="product-card">
-                <img src="kopi americano.jpeg" alt="Americano Blackcurrant">
-                <h3>4. Americano Blackcurrant</h3>
-                <strong>Rp29.000</strong>
-                <p>Americano dengan cita rasa blackcurrant yang manis, sedikit asam, dan menyegarkan.</p>
-            </li>
-            <li class="product-card">
-                <img src="v60.avif" alt="V60">
-                <h3>5. V60</h3>
-                <strong>Rp16.000</strong>
-                <p>Kopi manual brew dengan karakter rasa yang lebih bersih dan aroma biji kopi yang lebih menonjol.</p>
-            </li>
-            <li class="product-card favorite">
-                <img src="kopi_kenangan.jpg" alt="Es Kopi Kenangan Galau">
-                <h3>6. Es Kopi Kenangan Galau</h3>
-                <strong>Rp22.000</strong>
-                <p>Perpaduan espresso, susu creamy, dan gula aren dengan rasa manis yang pas untuk menemani waktu santai.</p>
-            </li>
-        </ul>
-    </section>
+    <main>
+        <section class="hero" id="beranda">
+            <div class="container">
+                <p class="eyebrow">UMKM BATANG</p>
+                <h1>kopi kenangan</h1>
+                <p>pilihan kopi untuk menemani anda galau.</p>
+                <button id="promoButton" type="button">lihat promo hari ini</button>
+                <aside class="aside-note">
+                    <h3>kalian galau?</h3>
+                    <p>Dengan satu tegukan, menemani galau Anda, pikiran yang berantakan, kenangan yang tiba-tiba muncul, dan rasa kecewa yang belum sempat diceritakan. Karena terkadang, kita hanya butuh satu tegukan untuk menemani malam sambil berharap hati perlahan kembali tenang.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="products-section" id="produk">
+            <div class="container">
+                <h2>Produk Unggulan</h2>
+                <div class="products">
+                    <figure class="product-card">
+                        <img src="asset/gambar/kopi tubruk siganature.jpg" alt="Kopi Tubruk Signature">
+                        <figcaption>
+                            <h3>1. Kopi Tubruk Signature</h3>
+                            <strong>Rp18.000</strong>
+                            <p>Kopi hitam pekat dengan aroma khas untuk menemani pagi atau malam saat sedang banyak pikiran.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="asset/gambar/kopi cold brew aren.jpg" alt="Cold Brew Aren">
+                        <figcaption>
+                            <h3>2. Cold Brew Aren</h3>
+                            <strong>Rp24.000</strong>
+                            <p>Kopi cold brew yang ringan dan segar dengan perpaduan manis gula aren, cocok diminum siang hari.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="asset/gambar/kopi americano peach.jpg" alt="Americano Peach">
+                        <figcaption>
+                            <h3>3. Americano Peach</h3>
+                            <strong>Rp19.000</strong>
+                            <p>Perpaduan espresso dan rasa peach yang segar, cocok untuk Anda yang ingin kopi dengan sensasi buah.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="asset/gambar/kopi americano blackcurrent.jpg" alt="Americano Blackcurrant">
+                        <figcaption>
+                            <h3>4. Americano Blackcurrant</h3>
+                            <strong>Rp29.000</strong>
+                            <p>Americano dengan cita rasa blackcurrant yang manis, sedikit asam, dan menyegarkan.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="asset/gambar/kopi v60.jpg" alt="V60">
+                        <figcaption>
+                            <h3>5. V60</h3>
+                            <strong>Rp16.000</strong>
+                            <p>Kopi manual brew dengan karakter rasa yang lebih bersih dan aroma biji kopi yang lebih menonjol.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card favorite">
+                        <img src="asset/gambar/kopi kenangan.jpg" alt="Es Kopi Kenangan Galau">
+                        <figcaption>
+                            <h3>6. Es Kopi Kenangan Galau</h3>
+                            <strong>Rp22.000</strong>
+                            <p>Perpaduan espresso, susu creamy, dan gula aren dengan rasa manis yang pas untuk menemani waktu santai.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="product-card">
+                        <img src="asset/gambar/latte_kenangan_manis.jpg" alt="Segelas Latte Kenangan Manis dengan foam susu lembut di atas es">
+                        <figcaption>
+                            <h3>7. Latte Kenangan Manis</h3>
+                            <strong>Rp23.000</strong>
+                            <p>Perpaduan espresso dan susu creamy dengan sentuhan karamel manis, cocok menemani sore yang santai.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="kontak">
+            <div class="container">
+                <h2 id="kontak-title">Hubungi Kami</h2>
+                <div class="contact-grid">
+                    <div class="contact-block">
+                        <h3>Alamat</h3>
+                        <p>Jl. Sudagaran No. 12, Batang, Jawa Tengah</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Jam Layanan</h3>
+                        <p>Setiap hari, 08.00 - 21.00 WIB</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Kontak</h3>
+                        <ul class="contact-links">
+                            <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">Chat via WhatsApp</a></li>
+                            <li><a href="https://instagram.com/kopikenangan.batang" target="_blank" rel="noopener">Kunjungi Instagram @kopikenangan.batang</a></li>
+                            <li><a href="https://maps.google.com/?q=Kopi+Kenangan+Batang" target="_blank" rel="noopener">Lihat lokasi di Google Maps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Kopi Kenangan Batang</p>
+        <div class="container">
+            <p>&copy; 2026 Kopi Kenangan Batang</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
