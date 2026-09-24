@@ -158,14 +158,14 @@ body {
 }
  
 
-footer {
+.site-footer {
     text-align: center;
     padding: 20px;
     background-color: #6f4e37;
     color: white;
 }
 
-.main-nav {
+.site-header {
     background-color: #4a2a17;
 }
 
@@ -176,13 +176,13 @@ footer {
     padding: 14px 20px;
 }
 
-.main-nav .brand {
+.site-header .brand {
     color: #f2c14e;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.main-nav ul {
+.site-header ul {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -190,13 +190,13 @@ footer {
     padding: 0;
 }
 
-.main-nav a {
+.site-header a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
 }
 
-.main-nav a:hover {
+.site-header a:hover {
     color: #f2c14e;
 }
 
@@ -422,7 +422,7 @@ figure.product-card {
     max-width: 400px;
 }
 
-.main-nav .brand {
+.site-header .brand {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -431,4 +431,185 @@ figure.product-card {
 .brand-logo {
     height: 32px;
     width: auto;
+}
+
+.field { margin-bottom: 22px; }
+.field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6f3b1f;
+    font-weight: 600;
+    font-size: 14px;
+}
+.field-hint {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #9c7a5c;
+    font-style: italic;
+}
+fieldset { margin: 0 0 22px; }
+fieldset + fieldset { margin-top: 22px; }
+#preview-form {
+    padding: 18px 20px;
+    white-space: pre-wrap;
+    background: white;
+    border: 1px solid #e0cba8;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background-color: #4a2a17;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 0 0 6px 0;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+}
+
+
+.page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page h1 {
+    color: #6f3b1f;
+    margin-bottom: 8px;
+}
+
+
+.page button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #f2c14e;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.page button[type="submit"]:hover {
+    background-color: #e0ac2f;
+}
+
+
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background-color: #fdf6ec;
+    border: 1px solid #e8d8c3;
+    border-top: 4px solid #6f3b1f;
+    border-radius: 14px;
+    padding: 36px 40px;
+    box-shadow: 0 8px 24px rgba(111, 78, 55, 0.12);
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section input[type="tel"],
+.contact-section select,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e0cba8;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-section input:hover,
+.contact-section select:hover,
+.contact-section textarea:hover {
+    border-color: #c9a877;
+}
+
+.contact-section input:focus,
+.contact-section select:focus,
+.contact-section textarea:focus {
+    border-color: #6f3b1f;
+    box-shadow: 0 0 0 3px rgba(111, 59, 31, 0.12);
+    outline: none;
+}
+
+.contact-section fieldset {
+    border: 1px solid #e8d8c3;
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: #fffaf3;
+}
+
+.contact-section fieldset legend {
+    padding: 0 8px;
+    color: #6f3b1f;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.contact-section fieldset label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}
+
+.contact-section fieldset label:hover {
+    background-color: rgba(111, 59, 31, 0.06);
+}
+
+.contact-section fieldset input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    accent-color: #6f3b1f;
+}
+
+.contact-section button[type="submit"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 10px rgba(224, 172, 47, 0.35);
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-section button[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(224, 172, 47, 0.45);
+}
+
+
+.contact-section #preview-form {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.08);
+}
+
+.contact-section input:focus-visible,
+.contact-section select:focus-visible,
+.contact-section textarea:focus-visible,
+.contact-section button:focus-visible {
+    outline: 3px solid #6f3b1f;
+    outline-offset: 2px;
 }
