@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk - Kopi Kenangan</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
@@ -132,6 +133,14 @@
             </div>
         </section>
  
+        <section class="products-section" id="stok" aria-labelledby="produk-dinamis-title">
+            <div class="container">
+                <h2 id="produk-dinamis-title">Ketersediaan Produk (Data JavaScript)</h2>
+                <p id="produk-ringkasan">Data produk akan dimuat melalui JavaScript.</p>
+                <div id="produk-dinamis" class="js-product-grid"></div>
+            </div>
+        </section>
+
         <section class="catalog-section" id="katalog">
             <div class="container">
                 <h2>Katalog Produk</h2>
@@ -202,6 +211,6 @@
         </div>
     </footer>
  
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

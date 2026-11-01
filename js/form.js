@@ -21,7 +21,7 @@ if (form && preview) {
     ].join("\n");
   });
  
-  // Tombol "Reset Form" juga mengembalikan teks preview ke kondisi awal
+  
   form.addEventListener("reset", () => {
     preview.textContent = defaultPreview;
   });
