@@ -749,7 +749,7 @@ th {
   }
 }
 
-/* ===== P09: kartu produk dari JavaScript ===== */
+
 .js-product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -819,4 +819,9 @@ th {
 .stock-badge.empty {
   color: #991b1b;
   background: #fee2e2;
+}
+
+#produk-unggulan {
+  font-weight: 700;
+  color: var(--color-primary, #6f3b1f);
 }
